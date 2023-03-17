@@ -20,6 +20,12 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 
     <script src="js/script.js"></script>
+
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/style.css" />
     <!-- 폰트어썸 -->
@@ -44,9 +50,8 @@
               <i class="home-icon fa-solid fa-house home"></i>
               <img src="/assets/images/home.png" class="home-hover" />
             </div>
-
             <div class="h-profile">
-              <i class="home-profile fa-solid fa-circle-user"></i>
+              <i class="fa-solid fa-circle-user"></i>
               <!-- <img src="/assets/images/profile.png" class="profile-hover" /> -->
             </div>
             <div class="h-portfolio">
@@ -158,6 +163,43 @@
       <section class="portfolio">
         <div class="inner">
           <h2>Portfolio</h2>
+          <!-- Swiper -->
+          <div class="swiper swVisual">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="stx">
+                  <img src="/assets/images/Group 79.png" />
+                  <div class="stx-com">
+                    <h1>STX 건설</h1>
+                    <p>STX 건설 웹 사이트 클론코딩</p>
+                    <span
+                      >개발 기간 : 2022. 10~ 2022. 11<br />
+                      개발 언어 : HTML, CSS
+                    </span>
+                    <div class="swiper-btn">
+                      <button>Work</button>
+                      <button>GitHub</button>
+                      <button>Origin</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">도시락통</div>
+              <div class="swiper-slide">한살림</div>
+              <div class="swiper-slide">현대그룹</div>
+              <div class="swiper-slide">Wonder Place</div>
+              <div class="swiper-slide">bgfretail</div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+
+            <!-- <div class="swiper-wrapper">
+              <div class="swiper-slide">미니 프로젝트</div>
+              <div class="swiper-slide">1차 프로젝트</div>
+              <div class="swiper-slide">2차 프로젝트</div>
+              <div class="swiper-slide">3차 프로젝트</div>
+            </div> -->
+          </div>
         </div>
       </section>
       <section class="skill"></section>
