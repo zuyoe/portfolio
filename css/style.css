@@ -160,6 +160,9 @@ body {
   font-weight: 400;
   color: #af4b4b;
 }
+.visual-left > h1 > .hd-color {
+  color: #ca7272;
+}
 .visual-left > h1 > p {
   font-size: 70px;
 }
@@ -169,10 +172,34 @@ body {
   line-height: 1.5;
   color: #696969;
 }
+.visual-left span {
+  position: relative;
+}
+.visual-left .hd-name::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 20px;
+  width: 52px;
+  height: 6px;
+  background: #f54a4a26;
+}
 .visual-left b {
   font-weight: 700;
-  font-size: 22px;
+  font-size: 24px;
+  text-emphasis: filled #af4a4a;
 }
+/* .visual-left .ball::after {
+  content: "";
+  position: absolute;
+  left: 2px;
+  top: 2px;
+  width: 5px;
+  height: 5px;
+  background: #ff9933;
+  border-radius: 50%;
+} */
+
 .vmw {
   display: block;
   position: relative;
@@ -231,7 +258,7 @@ body {
 .p-bot {
   display: flex;
   justify-content: space-between;
-  margin-top: 30px;
+  margin-top: 35px;
   padding: 40px 70px;
   border-radius: 12px;
   background-color: #fff;
@@ -317,6 +344,15 @@ body {
   font-weight: 600;
   text-align: center;
   margin-bottom: 60px;
+}
+.portfolio .inner > h2::after {
+  content: "";
+  position: absolute;
+  right: 480px;
+  top: 20px;
+  width: 150px;
+  height: 16px;
+  background: #f54a4a26;
 }
 .portfolio .inner > img {
   width: 1160px;
@@ -416,4 +452,20 @@ body {
 .swiper-button-prev {
 }
 
-/* 스와이프 */
+/* skills */
+/* contact */
+/* footer */
+.footer {
+  position: relative;
+  display: block;
+}
+.footer .inner {
+  padding: 30px;
+}
+.footer .inner > p {
+  text-align: center;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.5;
+  color: #af4a4a;
+}
