@@ -330,10 +330,39 @@ body {
     background-color: #fff;
 }
 
-.swiper-slide > img {
-    width: 520px;
-    height: 420px;
+.swiper-slide > .com {
+    width: 500px;
+    height: 350px;
+    border-radius: 10px;
     margin-right: 60px;
+}
+.swiper-slide > .stx-gif {
+    position: absolute;
+    top: 59px;
+    left: 132px;
+    width: 294px;
+    height: 174px;
+}
+.swiper-slide > .hansalim-gif {
+    position: absolute;
+    top: 59px;
+    left: 132px;
+    width: 293px;
+    height: 174px;
+}
+.swiper-slide > .dosiraktong-gif {
+    position: absolute;
+    top: 59px;
+    left: 132px;
+    width: 294px;
+    height: 174px;
+}
+.swiper-slide > .hyundai-gif {
+    position: absolute;
+    top: 59px;
+    left: 132px;
+    width: 293px;
+    height: 174px;
 }
 .study-project {
     align-items: center;
