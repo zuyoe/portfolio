@@ -155,7 +155,7 @@ body {
 .visual-left > h1 {
     font-size: 70px;
     /* 상단 오른쪽 아래 왼쪽 */
-    margin: 250px 0 60px 50px;
+    margin: 200px 0 60px 50px;
     font-family: "cooper-black-std", serif;
     font-style: normal;
     font-weight: 400;
@@ -212,7 +212,7 @@ body {
     display: block;
 }
 .v-img {
-    margin-top: 150px;
+    margin-top: 100px;
 }
 /* 프로필 */
 .profile {
@@ -456,7 +456,7 @@ body {
 
 /* skills */
 .skills {
-    padding: 30px;
+    padding: 60px 0;
 }
 .skills .inner {
     position: relative;
@@ -515,6 +515,7 @@ body {
     border: 1px solid #e8e8e8;
     overflow: hidden;
     position: relative;
+    background-color: #fff;
 }
 
 .animated-progress span {
