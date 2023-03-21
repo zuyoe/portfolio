@@ -39,4 +39,30 @@ window.onload = function () {
             prevEl: ".swiper-button-prev",
         },
     });
+
+    // 상태바 - v js
+    const animatedProgressSpans = document.querySelectorAll(".animated-progress span");
+    animatedProgressSpans.forEach(function (span) {
+        const dataProgress = span.getAttribute("data-progress");
+        span.style.width = dataProgress + "%";
+        span.textContent = dataProgress + "%";
+        const duration = 1000; // 1초
+        const start = performance.now();
+        const end = start + duration;
+
+        function animate() {
+            // 시작할 떄의 시점 performance.now()
+            const now = performance.now();
+            const timeFraction = (now - start) / duration;
+            if (timeFraction > 1) {
+                span.style.width = dataProgress + "%";
+                return;
+            }
+            const progress = timeFraction;
+            span.style.width = progress * dataProgress + "%";
+
+            requestAnimationFrame(animate);
+        }
+        requestAnimationFrame(animate);
+    });
 };
