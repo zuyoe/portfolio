@@ -42,7 +42,7 @@ window.onload = function () {
         },
     });
 
-    // 상태바 - v js
+    // 상태바
     const animatedProgressSpans = document.querySelectorAll(".animated-progress span");
     animatedProgressSpans.forEach(function (span) {
         const dataProgress = span.getAttribute("data-progress");
