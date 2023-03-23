@@ -42,7 +42,7 @@ window.onload = function () {
         },
     });
 
-    // 클릭 스클롤ㄹㄹㄹㄹㄹㄹㄹㄹㄹㄹㄹㄹㄹ
+    // 클릭스크롤
     const navbar = document.querySelectorAll(".header-right > div");
     const goPortfolio = document.querySelector(".vmw");
 
