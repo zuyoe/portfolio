@@ -42,6 +42,22 @@ window.onload = function () {
         },
     });
 
+    // 클릭 스클롤ㄹㄹㄹㄹㄹㄹㄹㄹㄹㄹㄹㄹㄹ
+    const navbar = document.querySelectorAll(".header-right > div");
+    const goPortfolio = document.querySelector(".vmw");
+
+    navbar.forEach((navbarItem) =>
+        navbarItem.addEventListener("click", (e) => {
+            console.log(e.currentTarget.dataset.link);
+            link = e.currentTarget.dataset.link;
+            scrollIntoView(link);
+        })
+    );
+
+    goPortfolio.addEventListener("click", () => {
+        scrollIntoView(goPortfolio.dataset.link);
+    });
+
     // 상태바
     const animatedProgressSpans = document.querySelectorAll(".animated-progress span");
     animatedProgressSpans.forEach(function (span) {
@@ -67,4 +83,10 @@ window.onload = function () {
         }
         requestAnimationFrame(animate);
     });
+
+    // 스크롤 이동 함수
+    function scrollIntoView(selector) {
+        const scrollTo = document.querySelector(selector);
+        scrollTo.scrollIntoView({ behavior: "smooth" });
+    }
 };
