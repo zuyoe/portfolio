@@ -94,6 +94,11 @@ window.onload = function () {
     const gotop = document.querySelector(".gotop");
     document.addEventListener("click", (e) => {
         console.log(e.target);
+        e.currentTarget.scrollTo({
+            top: 100,
+            left: 100,
+            behavior: "smooth",
+        });
     });
     // footer 의 상단 위치 픽셀값 파악.
     let waypoint_footer = new Waypoint({
