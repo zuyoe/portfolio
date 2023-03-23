@@ -54,6 +54,37 @@ body {
     /* background-color: yellow; */
 }
 
+/* 위로가기 */
+.gotop {
+    position: fixed;
+    right: 60px;
+    bottom: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 99;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #fff;
+    box-shadow:  rgba(250, 162, 162, 0.2) 0px 2px 8px 0px;
+    border: 0;
+    cursor: pointer;
+    color: #e26161;
+    font-size: 28px;
+    opacity: 0;
+    visibility: hidden;
+    transition: bottom 0.3s, visibility 0.3s, opacity 0.3s;
+}
+.gotop.active {
+    bottom: 20px;
+    visibility: visible;
+    opacity: 1;
+}
+.gotop.active-footer {
+    bottom: 320px !important;
+}
+
 /* 헤더 */
 .header {
     position: fixed;
@@ -474,10 +505,10 @@ body {
 }
 .swiper-slide > .pj-img > .stx-gif {
     position: absolute;
-    top: 64px;
+    top: 62px;
     left: 132px;
     width: 294px;
-    height: 174px;
+    height: 188px;
 }
 .swiper-slide > .pj-img > .hansalim-gif {
     position: absolute;
@@ -498,7 +529,7 @@ body {
     top: 62px;
     left: 132px;
     width: 294px;
-    height: 174px;
+    height: 188px;
 }
 .study-project {
     display: flex;

@@ -89,4 +89,36 @@ window.onload = function () {
         const scrollTo = document.querySelector(selector);
         scrollTo.scrollIntoView({ behavior: "smooth" });
     }
+
+    // 위로가기 스크롤바 구현
+    const gotop = document.querySelector(".gotop");
+    document.addEventListener("click", (e) => {
+        console.log(e.target);
+    });
+    // footer 의 상단 위치 픽셀값 파악.
+    let waypoint_footer = new Waypoint({
+        element: document.querySelector(".footer"),
+        handler: function (direction) {
+            // console.log(direction);
+            if (direction === "down") {
+                gotop.classList.add("active-footer");
+            } else {
+                gotop.classList.remove("active-footer");
+            }
+        },
+        offset: "95%",
+    });
+
+    let waypoint_service = new Waypoint({
+        element: document.querySelector(".visual"),
+        handler: function (direction) {
+            // console.log(direction);
+            if (direction === "down") {
+                gotop.classList.add("active");
+            } else {
+                gotop.classList.remove("active");
+            }
+        },
+        offset: "80%",
+    });
 };
