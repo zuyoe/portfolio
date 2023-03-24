@@ -129,8 +129,8 @@ body {
   opacity: 0;
   position: absolute;
   display: block;
-  top: 25px;
-  right: -18px;
+  top: 32px;
+  right: -25px;
 }
 
 .h-home:hover .home-hover {
@@ -150,8 +150,8 @@ body {
   opacity: 0;
   position: absolute;
   display: block;
-  top: 25px;
-  right: -20px;
+  top: 32px;
+  right: -27px;
 }
 
 .h-profile:hover .profile-hover {
@@ -172,8 +172,8 @@ body {
   opacity: 0;
   position: absolute;
   display: block;
-  top: 25px;
-  right: -22px;
+  top: 32px;
+  right: -30px;
 }
 
 .h-portfolio:hover .portfolio-hover {
@@ -194,8 +194,8 @@ body {
   opacity: 0;
   position: absolute;
   display: block;
-  top: 25px;
-  right: -25px;
+  top: 32px;
+  right: -37px;
 }
 
 .h-snt:hover .snt-hover {
@@ -216,8 +216,8 @@ body {
   opacity: 0;
   position: absolute;
   display: block;
-  top: 25px;
-  right: -18px;
+  top: 32px;
+  right: -37px;
 }
 
 .h-contact:hover .contact-hover {
@@ -568,7 +568,7 @@ body {
 .study-project > span {
   font-size: 15px;
   color: #464646;
-  line-height: 1.3;
+  line-height: 1.8;
 }
 .study-project > .swiper-btn {
   margin-top: 50px;
