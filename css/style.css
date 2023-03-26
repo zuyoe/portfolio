@@ -356,10 +356,16 @@ body {
   display: flex;
   justify-content: space-between;
   margin-top: 35px;
-  padding: 40px 70px;
+  padding: 40px 80px;
   border-radius: 12px;
   background-color: #fff;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+.p-profile {
+  border: 1px;
+  border-right-style: solid;
+  padding-right: 30px;
+  border-right-color: #E1E1E1;
 }
 .p-profile > h2 {
   font-size: 18px;
@@ -382,6 +388,13 @@ body {
 }
 .profile-kr {
   color: #616161;
+}
+.p-history {
+  border: 1px;
+  border-right-style: solid;
+  padding-right: 30px;
+  border-right-color: #E1E1E1;
+
 }
 .p-history > h2 {
   font-size: 18px;
