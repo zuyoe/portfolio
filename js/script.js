@@ -85,10 +85,10 @@ window.onload = function () {
     });
 
     // // 스크롤 이동 함수
-    // function scrollIntoView(selector) {
-    //     const scrollTo = document.querySelector(selector);
-    //     scrollTo.scrollIntoView({ behavior: "smooth" });
-    // }
+    function scrollIntoView(selector) {
+        const scrollTo = document.querySelector(selector);
+        scrollTo.scrollIntoView({ behavior: "smooth" });
+    }
 
     // // 위로가기 스크롤바 구현
     // const gotop = document.querySelector(".gotop");
