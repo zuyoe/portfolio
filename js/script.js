@@ -48,7 +48,7 @@ window.onload = function () {
 
     navbar.forEach((navbarItem) =>
         navbarItem.addEventListener("click", (e) => {
-            console.log(e.currentTarget.dataset.link);
+            // console.log(e.currentTarget.dataset.link);
             link = e.currentTarget.dataset.link;
             scrollIntoView(link);
         })
