@@ -20,7 +20,7 @@ img {
     border: 0;
 }
 html {
-    font-size: 16px;
+    font-size: 10px;
 }
 ::-webkit-scrollbar {
     width: 8px;
@@ -223,7 +223,7 @@ body {
 @media screen and (max-width: 768px) {
     .header-right {
         gap: 40px;
-        font-size: 20px;
+        font-size: 2rem;
     }
 }
 
@@ -249,7 +249,7 @@ body {
     margin-right: 20px;
 }
 .visual-left > h1 {
-    font-size: 80px;
+    font-size: 8rem;
     /* 상단 오른쪽 아래 왼쪽 */
     margin: 200px 0 60px 50px;
     font-family: "cooper-black-std", serif;
@@ -261,10 +261,10 @@ body {
     color: #ca7272;
 }
 .visual-left > h1 > p {
-    font-size: 70px;
+    font-size: 7rem;
 }
 .visual-left p {
-    font-size: 20px;
+    font-size: 2rem;
     margin-left: 50px;
     line-height: 1.5;
     color: #696969;
@@ -274,7 +274,7 @@ body {
     position: relative;
 }
 .visual-left .hd-name {
-    font-size: 24px;
+    font-size: 2.4rem;
     font-weight: 700;
 }
 .visual-left .hd-name::after {
@@ -312,19 +312,23 @@ body {
 
 @media screen and (max-width: 1024px) {
     .visual-left > h1 {
-        font-size: 70px;
+        font-size: 7rem;
     }
     .visual-left p {
-        font-size: 16px;
+        font-size: 1.6rem;
     }
     .vmw {
-        width: 70%;
-    }
-    .v-img {
+        width: 60%;
+
+        margin: 50px 0 0 40px;
     }
 }
 
 @media screen and (max-width: 768px) {
+    .visual {
+        padding: 40px 0;
+        padding-top: 100px;
+    }
     .visual .inner {
         justify-content: center;
         text-align: center;
@@ -333,15 +337,15 @@ body {
         margin-right: 0;
     }
     .visual-left h1 {
-        font-size: 80px;
-        margin: 120px 0 50px 0;
+        font-size: 8rem;
+        margin: 180px 0 50px 0;
     }
     .visual-left p {
-        font-size: 16px;
+        font-size: 1.6rem;
         margin-left: 0;
     }
     .visual-left .hd-name {
-        font-size: 25px;
+        font-size: 2.6rem;
     }
     .visual-left .hd-name::after {
         content: "";
@@ -415,6 +419,7 @@ body {
     margin-top: 35px;
     padding: 40px 80px;
     border-radius: 12px;
+    gap: 20px;
     background-color: #fff;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 }
@@ -496,6 +501,80 @@ body {
 .lisence-kr {
     color: #616161;
 }
+
+@media all and (min-width: 1024px) and (max-width: 1150px) {
+    .p-top > img {
+        top: -19px;
+        left: 50px;
+        width: 400px;
+        height: 400px;
+    }
+    .bubble {
+        margin-right: 30px;
+        padding: 50px 70px;
+    }
+    .bubble > h1 {
+        font-size: 30px;
+    }
+    .bubble > p {
+        font-size: 1.3rem;
+    }
+    .gnb {
+        font-size: 1.4rem;
+        white-space: nowrap;
+    }
+}
+@media screen and (max-width: 1150px) {
+    .p-top > img {
+        top: -18px;
+        left: 35px;
+        width: 380px;
+        height: 380px;
+    }
+}
+@media all and (min-width: 1025px) and (max-width: 1090px) {
+    .p-top > img {
+        top: -8px;
+        left: 20px;
+        width: 370px;
+        height: 370px;
+    }
+}
+@media all and (min-width: 768px) and (max-width: 1024px) {
+    .profile {
+        text-align: center;
+    }
+    .p-top {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .p-top > img {
+        position: static;
+        background: center;
+        width: 350px;
+        height: 350px;
+        margin: 0;
+    }
+    .bubble {
+        margin-right: 0;
+        padding: 60px 80px;
+    }
+    .bubble > h1 {
+        font-size: 3.4rem;
+    }
+    .bubble > p {
+        font-size: 1.6rem;
+    }
+    .p-bot {
+        text-align: left;
+    }
+    .gnb {
+        font-size: 1.4rem;
+        white-space: nowrap;
+    }
+}
+
 /* 포트폴리오 */
 .portfolio {
     display: block;
@@ -521,19 +600,7 @@ body {
     height: 16px;
     background: #f54a4a26;
 }
-/* .portfolio .inner > p {
-   font-size: 17px;
-}
-.portfolio .inner .pp {
-    position: absolute !important;
-    top: 0px;
-    right: 0px;
-}
-.tp {
-    position: absolute;
-    top: 1px;
-    right: 2px;
-} */
+
 /* swiper */
 .swVisual-wrap-1 {
     position: relative;
