@@ -32,7 +32,7 @@ html {
     background-color: rgba(0, 0, 0, 0.1);
 }
 body {
-    font-family: "Noto Sans KR", "cooper-black-std", sans-serif;
+    font-family: "Noto Sans KR", "Cooper Black", sans-serif;
     font-size: 14px;
     line-height: 1;
     letter-spacing: -0.64px;
@@ -43,6 +43,7 @@ body {
 /* 공통요소 */
 .wrap {
     position: relative;
+    display: block;
     background-color: #fffcfc;
 }
 .inner {
@@ -252,7 +253,7 @@ body {
     font-size: 8rem;
     /* 상단 오른쪽 아래 왼쪽 */
     margin: 200px 0 60px 50px;
-    font-family: "cooper-black-std", serif;
+    font-family: "Cooper Black", sans-serif;
     font-style: normal;
     font-weight: 400;
     color: #af4b4b;
@@ -532,7 +533,7 @@ body {
         height: 380px;
     }
 }
-@media all and (min-width: 1025px) and (max-width: 1090px) {
+@media all and (min-width: 1024px) and (max-width: 1090px) {
     .p-top > img {
         top: -8px;
         left: 20px;
@@ -540,8 +541,9 @@ body {
         height: 370px;
     }
 }
-@media all and (min-width: 768px) and (max-width: 1024px) {
+@media all and (min-width: 768px) and (max-width: 1023px) {
     .profile {
+        padding: 40px 0;
         text-align: center;
     }
     .p-top {
@@ -575,6 +577,98 @@ body {
     }
 }
 
+@media all and (min-width: 840px) and (max-width: 950px) {
+    .p-profile > h2, .p-history > h2, .p-lisence > h2 {
+        font-size: 1.6rem;
+    }
+    .gnb {
+        font-size: 1.2rem;
+    }
+}
+@media all and (min-width: 768px) and (max-width: 839px) {
+    .p-profile > h2, .p-history > h2, .p-lisence > h2 {
+        font-size: 1.5rem;
+    }
+    .gnb {
+        font-size: 1.1rem;
+    }
+}
+
+@media all and (min-width: 480px) and (max-width: 767px) {
+    .profile {
+        text-align: center;
+        padding: 40px 0;
+    }
+    .p-top {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .p-top > img {
+        position: static;
+        background: center;
+        width: 250px;
+        height: 250px;
+        margin: 0;
+    }
+    .bubble {
+        margin-right: 0;
+        padding: 40px 50px;
+    }
+    .bubble > h1 {
+        font-size: 2.4rem;
+    }
+    .bubble > p {
+        font-size: 1.2rem;
+    }
+    .p-bot {
+        display: block;
+        text-align: left;
+    }
+    .p-profile,
+    .p-history {
+        border: 0;
+        margin-bottom: 20px;
+    }
+    .gnb {
+        font-size: 1.4rem;
+        white-space: nowrap;
+    }
+}
+@media all and (max-width: 479px) {
+    .profile {
+        text-align: center;
+    }
+    .p-top {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .p-top > img {
+        position: static;
+        background: center;
+        width: 250px;
+        height: 250px;
+        margin: 0;
+    }
+    .bubble {
+        margin-right: 0;
+        padding: 40px 50px;
+    }
+    .bubble > h1 {
+        font-size: 2.4rem;
+    }
+    .bubble > p {
+        font-size: 1.2rem;
+    }
+    .p-bot {
+        text-align: left;
+    }
+    .gnb {
+        font-size: 1.4rem;
+        white-space: nowrap;
+    }
+}
 /* 포트폴리오 */
 .portfolio {
     display: block;
