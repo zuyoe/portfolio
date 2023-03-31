@@ -369,27 +369,29 @@ body {
     .visual-left h1 {
         font-size: 7rem;
         margin: 130px 0 50px 0;
+    }
+    .visual-left p {
+        font-size: 1.3rem;
+        margin-left: 0;
+    }
+    .visual-left .hd-name {
+        font-size: 2.2rem;
+    }
+    .visual-left .hd-name::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 22px;
+        width: 60px;
+        height: 9px;
+    }
+    .vmw {
+        display: inline-block;
+        width: 40%;
+        margin: 60px;
+    }
 }
-.visual-left p {
-    font-size: 1.3rem;
-    margin-left: 0;
-}
-.visual-left .hd-name {
-    font-size: 2.2rem;
-}
-.visual-left .hd-name::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 22px;
-    width: 60px;
-    height: 9px;
-}
-.vmw {
-    display: inline-block;
-    width: 40%;
-    margin: 60px;
-}
+
 /* 프로필 */
 .profile {
     padding: 80px 0;
@@ -602,7 +604,6 @@ body {
         white-space: nowrap;
     }
 }
-
 @media all and (min-width: 840px) and (max-width: 950px) {
     .p-profile > h2,
     .p-history > h2,
@@ -623,7 +624,6 @@ body {
         font-size: 1.1rem;
     }
 }
-
 @media all and (min-width: 480px) and (max-width: 767px) {
     .profile {
         text-align: center;
@@ -698,7 +698,6 @@ body {
         /* white-space: nowrap; */
     }
 }
-
 @media all and (min-width: 375px) and (max-width: 479px) {
     .profile {
         text-align: center;
@@ -754,6 +753,7 @@ body {
         font-size: 1.1rem;
     }
 }
+
 /* 포트폴리오 */
 .portfolio {
     display: block;
@@ -815,7 +815,6 @@ body {
 .swiper-slide > .pj-img {
     padding: 30px;
     height: 440px;
-    /* background-color: yellow; */
 }
 .swiper-slide > .pj-img > .com {
     width: 500px;
@@ -929,6 +928,168 @@ body {
     text-align: center;
 }
 
+@media all and (min-width: 1024px) and (max-width: 1150px) {
+    .swVisual-wrap-1 {
+        position: relative;
+        display: block;
+        width: 80%;
+        height: 80%;
+        background: url("../assets/images/folder.png") no-repeat center;
+    }
+    .swVisual {
+        width: 80%;
+        height: 80%;
+    }
+}
+@media all and (min-width: 768px) and (max-width: 1023px) {
+}
+@media all and (min-width: 480px) and (max-width: 767px) {
+}
+@media all and (min-width: 375px) and (max-width: 479px) {
+    .swVisual-wrap-1 {
+        position: relative;
+        display: block;
+        width: 355px;
+        height: 200px;
+        background: none;
+        background-color: #009ce6;
+    }
+    .swVisual {
+        width: 355px;
+        height: 200px;
+    }
+
+    .swVisual-wrap-1,
+    .swVisual-wrap-2 {
+        padding: 0;
+    }
+    .swiper-slide {
+        width: 355px;
+        height: 200px;
+        display: flex;
+        margin-top: 80px;
+        gap: 10px;
+        background-color: #fff;
+        border-radius: 20px;
+        justify-content: center;
+    }
+    .swiper-slide > .pj-img {
+        padding: 30px;
+        width: 100px;
+        height: 100px;
+    }
+    .swiper-slide > .pj-img > .com {
+        width: 500px;
+        /* line-height: 350px;
+        height: 350px; */
+        height: 100%;
+        border-radius: 10px;
+        vertical-align: middle;
+        /* margin: 0 60px; */
+    }
+    .swiper-slide > .pj-img > .stx-gif {
+        position: absolute;
+        top: 62px;
+        left: 132px;
+        width: 100px;
+        height: 50x;
+    }
+    .swiper-slide > .pj-img > .hansalim-gif {
+        position: absolute;
+        top: 62px;
+        left: 132px;
+        width: 294px;
+        height: 189px;
+    }
+    .swiper-slide > .pj-img > .dosiraktong-gif {
+        position: absolute;
+        top: 62px;
+        left: 132px;
+        width: 294px;
+        height: 189px;
+    }
+    .swiper-slide > .pj-img > .hyundai-gif {
+        position: absolute;
+        top: 62px;
+        left: 132px;
+        width: 294px;
+        height: 188px;
+    }
+    .study-project {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        height: 440px;
+        border-radius: 20px;
+        background: #fff;
+        padding: 30px;
+        /* background-color: yellowgreen; */
+    }
+
+    .study-project > h1 {
+        font-size: 30px;
+        font-weight: 600;
+        margin-bottom: 15px;
+    }
+    .study-project > p {
+        font-size: 20px;
+        font-weight: 400;
+        color: #9e9a9a;
+        margin-bottom: 20px;
+    }
+    .study-project > span {
+        font-size: 15px;
+        color: #464646;
+        line-height: 1.8;
+    }
+    .study-project > .swiper-btn {
+        margin-top: 50px;
+    }
+    .study-project > .swiper-btn > a {
+        background-color: #fff;
+        font-size: 15px;
+        font-weight: bold;
+        color: #3c3c3c;
+        margin-right: 15px;
+        border: none;
+        border-radius: 20px;
+        gap: 10px;
+        padding: 10px 40px;
+        box-shadow: 0 1px 3px rgba(145, 145, 145, 0.12), 0 1px 2px rgba(139, 139, 139, 0.24);
+        cursor: pointer;
+    }
+    /* .swiper-button-next {
+        position: absolute;
+        color: #fff;
+        top: 400px;
+        right: -75px;
+        width: 70px;
+        height: 70px;
+        background-color: #e6e6e6;
+        border-radius: 50%;
+    } */
+    /* .swiper-button-next::after {
+        font-size: 30px;
+        font-weight: 600;
+        text-align: center;
+    } */
+    /* .swiper-button-prev {
+        position: absolute;
+        color: #fff;
+        top: 400px;
+        left: -75px;
+        width: 70px;
+        height: 70px;
+        background-color: #e6e6e6;
+        border-radius: 50%;
+    }
+    .swiper-button-prev::after {
+        font-size: 30px;
+        font-weight: 600;
+        text-align: center;
+    } */
+}
 /* skills */
 .snt {
     padding: 80px 0;
@@ -956,8 +1117,8 @@ body {
     gap: 120px;
     justify-content: center;
 }
-.left-box {
-}
+/* .left-box {
+} */
 
 .left-box-item {
     display: flex;
@@ -968,8 +1129,8 @@ body {
     width: 50px;
     height: 50px;
 }
-.right-box {
-}
+/* .right-box {
+} */
 
 .right-box-item {
     display: flex;
@@ -1097,8 +1258,8 @@ body {
 .footer {
     padding: 80px 0;
 }
-.footer .inner {
-}
+/* .footer .inner {
+} */
 .footer .inner > p {
     text-align: center;
     font-size: 12px;
