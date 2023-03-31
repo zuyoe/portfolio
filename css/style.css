@@ -49,7 +49,7 @@ body {
 .inner {
     max-width: 1200px;
     width: 100%;
-    min-width: 640px;
+    /* min-width: 640px; */
     padding: 0 20px;
     margin: 0 auto;
 }
@@ -365,7 +365,31 @@ body {
         display: none;
     }
 }
-
+@media all and (min-width: 375px) and (max-width: 479px) {
+    .visual-left h1 {
+        font-size: 7rem;
+        margin: 130px 0 50px 0;
+}
+.visual-left p {
+    font-size: 1.3rem;
+    margin-left: 0;
+}
+.visual-left .hd-name {
+    font-size: 2.2rem;
+}
+.visual-left .hd-name::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 22px;
+    width: 60px;
+    height: 9px;
+}
+.vmw {
+    display: inline-block;
+    width: 40%;
+    margin: 60px;
+}
 /* 프로필 */
 .profile {
     padding: 80px 0;
@@ -568,7 +592,10 @@ body {
         font-size: 1.6rem;
     }
     .p-bot {
+        display: flex;
+        align-content: stretch;
         text-align: left;
+        padding: 40px;
     }
     .gnb {
         font-size: 1.4rem;
@@ -600,15 +627,12 @@ body {
 @media all and (min-width: 480px) and (max-width: 767px) {
     .profile {
         text-align: center;
-        padding: 40px 0;
+        padding: 40px 20px;
     }
     .p-top {
         display: inline-block;
     }
-    .p-bot {
-        display: flex;
-        flex-direction: column;
-    }
+
     .p-top > img {
         position: static;
         background: center;
@@ -618,16 +642,20 @@ body {
     }
     .bubble {
         margin-right: 0;
-        padding: 40px 50px;
     }
     .bubble > h1 {
         font-size: 2.4rem;
     }
     .bubble > p {
-        font-size: 1.2rem;
+        font-size: 1.3rem;
     }
     .p-bot {
         text-align: left;
+
+        display: flex;
+        flex-direction: column;
+        padding: 40px;
+        gap: 30px;
     }
     .p-profile,
     .p-history,
@@ -640,19 +668,46 @@ body {
         border: 0;
     }
     .gnb {
+        display: flex;
         font-size: 1.4rem;
+    }
+}
+@media all and (min-width: 615px) and (max-width: 672px) {
+    .bubble {
+        padding: 50px;
+    }
+}
+@media all and (min-width: 585px) and (max-width: 614px) {
+    .bubble {
+        padding: 50px;
+    }
+    .bubble > p {
+        font-size: 1.2rem;
         white-space: nowrap;
     }
 }
-@media all and (max-width: 479px) {
+@media all and (min-width: 480px) and (max-width: 584px) {
+    .bubble {
+        padding: 50px;
+    }
+    .bubble > h1 {
+        font-size: 2rem;
+    }
+    .bubble > p {
+        font-size: 1.1rem;
+        /* white-space: nowrap; */
+    }
+}
+
+@media all and (min-width: 375px) and (max-width: 479px) {
     .profile {
         text-align: center;
+        padding: 40px 0;
     }
     .p-top {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
+        display: inline-block;
     }
+
     .p-top > img {
         position: static;
         background: center;
@@ -662,20 +717,41 @@ body {
     }
     .bubble {
         margin-right: 0;
-        padding: 40px 50px;
+        padding: 30px;
     }
     .bubble > h1 {
-        font-size: 2.4rem;
+        font-size: 1.8rem;
+        margin-bottom: 20px;
     }
     .bubble > p {
-        font-size: 1.2rem;
+        font-size: 1.1rem;
     }
     .p-bot {
         text-align: left;
+
+        display: flex;
+        flex-direction: column;
+        padding: 40px;
+        gap: 30px;
+    }
+    .p-profile,
+    .p-history,
+    .p-lisence {
+        padding: 0;
+        margin: 0;
+    }
+    .p-profile,
+    .p-history {
+        border: 0;
+    }
+    .p-profile > h2,
+    .p-history > h2,
+    .p-lisence > h2 {
+        font-size: 1.4rem;
     }
     .gnb {
-        font-size: 1.4rem;
-        white-space: nowrap;
+        display: flex;
+        font-size: 1.1rem;
     }
 }
 /* 포트폴리오 */
