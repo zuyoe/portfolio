@@ -222,6 +222,9 @@ body {
 }
 
 @media screen and (max-width: 768px) {
+    .header {
+        height: 80px;
+    }
     .header-right {
         gap: 30px;
         font-size: 2rem;

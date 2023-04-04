@@ -87,6 +87,7 @@ window.onload = function () {
                     }
                     requestAnimationFrame(animate);
                 });
+                // observer.unobserve(SNT);
             }
         });
     });
