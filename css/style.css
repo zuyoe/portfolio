@@ -55,7 +55,7 @@ body {
 }
 
 /* 위로가기 */
-/* .gotop {
+.gotop {
     position: fixed;
     right: 60px;
     bottom: 60px;
@@ -83,7 +83,7 @@ body {
 }
 .gotop.active-footer {
     bottom: 120px !important;
-} */
+}
 
 /* 헤더 */
 .header {

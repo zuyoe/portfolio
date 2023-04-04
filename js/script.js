@@ -58,31 +58,42 @@ window.onload = function () {
         scrollIntoView(goPortfolio.dataset.link);
     });
 
-    // 상태바
-    const animatedProgressSpans = document.querySelectorAll(".animated-progress span");
-    animatedProgressSpans.forEach(function (span) {
-        const dataProgress = span.getAttribute("data-progress");
-        span.style.width = dataProgress + "%";
-        span.textContent = dataProgress + "%";
-        const duration = 1000; // 1초
-        const start = performance.now();
-        const end = start + duration;
+    // skill & tool 스크롤 감지
+    const SNT = document.querySelector(".snt-box");
+    const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+                const animatedProgressSpans = document.querySelectorAll(".animated-progress span");
+                animatedProgressSpans.forEach(function (span) {
+                    const dataProgress = span.getAttribute("data-progress");
+                    span.style.width = dataProgress + "%";
+                    span.textContent = dataProgress + "%";
+                    const duration = 1000; // 1초
+                    const start = performance.now();
+                    const end = start + duration;
 
-        function animate() {
-            // 시작할 떄의 시점 performance.now()
-            const now = performance.now();
-            const timeFraction = (now - start) / duration;
-            if (timeFraction > 1) {
-                span.style.width = dataProgress + "%";
-                return;
+                    function animate() {
+                        // 시작할 떄의 시점 performance.now()
+                        const now = performance.now();
+                        const timeFraction = (now - start) / duration;
+                        if (timeFraction > 1) {
+                            span.style.width = dataProgress + "%";
+                            return;
+                        }
+                        const progress = timeFraction;
+                        span.style.width = progress * dataProgress + "%";
+
+                        requestAnimationFrame(animate);
+                    }
+                    requestAnimationFrame(animate);
+                });
             }
-            const progress = timeFraction;
-            span.style.width = progress * dataProgress + "%";
-
-            requestAnimationFrame(animate);
-        }
-        requestAnimationFrame(animate);
+        });
     });
+    observer.observe(SNT);
+
+    console.log(SNT);
+    // 상태바
 
     // // 스크롤 이동 함수
     function scrollIntoView(selector) {
@@ -90,40 +101,38 @@ window.onload = function () {
         scrollTo.scrollIntoView({ behavior: "smooth" });
     }
 
-    // // 위로가기 스크롤바 구현
-    // const gotop = document.querySelector(".gotop");
-    // document.addEventListener("click", (e) => {
-    //     console.log(e.target);
-    //     e.currentTarget.scrollTo({
-    //         top: 100,
-    //         left: 100,
-    //         behavior: "smooth",
-    //     });
-    // });
-    // // footer 의 상단 위치 픽셀값 파악.
-    // let waypoint_footer = new Waypoint({
-    //     element: document.querySelector(".footer"),
-    //     handler: function (direction) {
-    //         // console.log(direction);
-    //         if (direction === "down") {
-    //             gotop.classList.add("active-footer");
-    //         } else {
-    //             gotop.classList.remove("active-footer");
-    //         }
-    //     },
-    //     offset: "95%",
-    // });
+    // 위로가기 스크롤바 구현
+    const gotop = document.querySelector(".gotop");
+    gotop.addEventListener("click", () => {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth",
+        });
+    });
+    // footer 의 상단 위치 픽셀값 파악.
+    let waypoint_footer = new Waypoint({
+        element: document.querySelector(".footer"),
+        handler: function (direction) {
+            // console.log(direction);
+            if (direction === "down") {
+                gotop.classList.add("active-footer");
+            } else {
+                gotop.classList.remove("active-footer");
+            }
+        },
+        offset: "95%",
+    });
 
-    // let waypoint_service = new Waypoint({
-    //     element: document.querySelector(".visual"),
-    //     handler: function (direction) {
-    //         // console.log(direction);
-    //         if (direction === "down") {
-    //             gotop.classList.add("active");
-    //         } else {
-    //             gotop.classList.remove("active");
-    //         }
-    //     },
-    //     offset: "80%",
-    // });
+    let waypoint_service = new Waypoint({
+        element: document.querySelector(".visual"),
+        handler: function (direction) {
+            // console.log(direction);
+            if (direction === "down") {
+                gotop.classList.add("active");
+            } else {
+                gotop.classList.remove("active");
+            }
+        },
+        offset: "80%",
+    });
 };
