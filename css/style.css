@@ -223,11 +223,20 @@ body {
 
 @media screen and (max-width: 768px) {
     .header-right {
-        gap: 40px;
+        gap: 30px;
         font-size: 2rem;
     }
 }
-
+@media screen and (max-width: 400px) {
+    .zulogo {
+        width: 75px;
+        height: 75px;
+    }
+    .header-right {
+        gap: 20px;
+        font-size: 1.5rem;
+    }
+}
 /* 비주얼 */
 .visual {
     position: relative;
@@ -365,9 +374,9 @@ body {
         display: none;
     }
 }
-@media all and (min-width: 375px) and (max-width: 479px) {
+@media screen and (max-width: 479px) {
     .visual-left h1 {
-        font-size: 7rem;
+        font-size: 6rem;
         margin: 130px 0 50px 0;
     }
     .visual-left p {
@@ -698,7 +707,7 @@ body {
         /* white-space: nowrap; */
     }
 }
-@media all and (min-width: 375px) and (max-width: 479px) {
+@media screen and (max-width: 479px) {
     .profile {
         text-align: center;
         padding: 40px 0;
@@ -787,7 +796,6 @@ body {
     width: auto;
     height: 580px;
     background: url("../assets/images/folder.png") no-repeat center;
-    /* background-size: cover; */
 }
 
 .swVisual {
@@ -917,8 +925,7 @@ body {
     text-align: center;
 }
 
-
-@media all and (min-width: 768px) and (max-width: 1399px){
+@media all and (min-width: 768px) and (max-width: 1399px) {
     .sw-btn {
         display: flex;
         justify-content: center;
@@ -957,46 +964,45 @@ body {
         text-align: center;
     }
 }
-@media screen and (max-width: 767px){
-  .sw-btn {
-      display: flex;
-      justify-content: center;
-      gap: 30px;
-      margin-top: 30px;
-  }
-  .swiper-button-next {
-      position: relative;
-      color: #fff;
-      top: 0px;
-      right: 0px;
-      width: 50px;
-      height: 50px;
-      background-color: #e6e6e6;
-      border-radius: 50%;
-  }
-  .swiper-button-next::after {
-      display: block;
-      font-size: 2rem;
-      font-weight: 600;
-      text-align: center;
-  }
-  .swiper-button-prev {
-      position: relative;
-      top: 0px;
-      left: 0px;
-      width: 50px;
-      height: 50px;
-      background-color: #e6e6e6;
-      border-radius: 50%;
-  }
-  .swiper-button-prev::after {
-      display: block;
-      font-size: 2rem;
-      font-weight: 600;
-      text-align: center;
-  }
+@media screen and (max-width: 767px) {
+    .sw-btn {
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        margin-top: 30px;
+    }
+    .swiper-button-next {
+        position: relative;
+        color: #fff;
+        top: 0px;
+        right: 0px;
+        width: 50px;
+        height: 50px;
+        background-color: #e6e6e6;
+        border-radius: 50%;
+    }
+    .swiper-button-next::after {
+        display: block;
+        font-size: 2rem;
+        font-weight: 600;
+        text-align: center;
+    }
+    .swiper-button-prev {
+        position: relative;
+        top: 0px;
+        left: 0px;
+        width: 50px;
+        height: 50px;
+        background-color: #e6e6e6;
+        border-radius: 50%;
+    }
+    .swiper-button-prev::after {
+        display: block;
+        font-size: 2rem;
+        font-weight: 600;
+        text-align: center;
+    }
 }
-
 
 @media all and (min-width: 1025px) and (max-width: 1219px) {
     .swVisual-wrap-1 {
@@ -1163,7 +1169,7 @@ body {
         line-height: 1.8;
     }
 }
-@media all and (min-width: 360px) and (max-width: 767px) {
+@media screen and (max-width: 767px) {
     .swVisual-wrap-1 {
         position: relative;
         display: block;
@@ -1254,7 +1260,6 @@ body {
         cursor: pointer;
     }
 }
-
 
 /* skills */
 .snt {
@@ -1373,6 +1378,54 @@ body {
     border-radius: 60px;
 }
 
+@media screen and (max-width: 1160px) {
+    .snt-box {
+        gap: 70px;
+    }
+}
+@media all and (min-width: 940px) and (max-width: 1089px) {
+    .animated-progress {
+        width: 330px;
+    }
+}
+@media all and (min-width: 768px) and (max-width: 940px) {
+    .snt-box {
+        gap: 30px;
+    }
+    .animated-progress {
+        width: 250px;
+        height: 20px;
+    }
+    .left-box-item > img {
+        width: 40px;
+        height: 40px;
+    }
+    .right-box-item > img {
+        width: 40px;
+        height: 40px;
+    }
+}
+@media screen and (max-width: 767px) {
+    .snt-box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0;
+    }
+    .animated-progress {
+        width: 250px;
+        height: 25px;
+    }
+    .left-box-item > img {
+        width: 30px;
+        height: 30px;
+    }
+    .right-box-item > img {
+        width: 30px;
+        height: 30px;
+    }
+}
+
 /* contact */
 .contact {
     padding: 80px 0;
@@ -1411,7 +1464,7 @@ body {
     transition: transform 300ms ease-in-out;
 }
 .c-txt {
-    font-size: 20px;
+    font-size: 2rem;
     line-height: 1.8;
     text-align: center;
     padding: 20px 0;
@@ -1420,6 +1473,20 @@ body {
 .c-txt > i {
     margin-right: 10px;
 }
+
+@media screen and (max-width: 767px) {
+    .contact {
+        padding: 40px 0;
+    }
+    .c-icon > a > img {
+        width: 50px;
+        height: 50px;
+    }
+    .c-txt {
+        font-size: 1.6rem;
+    }
+}
+
 /* footer */
 .footer {
     padding: 80px 0;
@@ -1428,8 +1495,13 @@ body {
 } */
 .footer .inner > p {
     text-align: center;
-    font-size: 12px;
+    font-size: 1.2rem;
     font-weight: 500;
     line-height: 1.5;
     color: #af4a4a;
+}
+@media screen and (max-width: 767px) {
+    .footer .inner > p {
+        font-size: 1rem;
+    }
 }
