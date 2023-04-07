@@ -1,4 +1,36 @@
 window.onload = function () {
+    AOS.init();
+
+     // ** FADE OUT FUNCTION **
+    // fadeOut( element : document.querySelctor(대상) )
+    function fadeOut(el) {
+        // 대상.style.투명도 = 불투명
+        el.style.opacity = 1;
+        (function fade() {
+            // 대상.style.투명도 -= 0.1 감소
+            if ((el.style.opacity -= 0.1) < 0) {
+                el.style.display = "none";
+            } else {
+                // 웹브라우저 프레임갱신
+                requestAnimationFrame(fade);
+            }
+        })();
+    }
+
+    // ** FADE IN FUNCTION **
+    // fadeIn( element : document.querySelctor(대상) )
+    function fadeIn(el, display) {
+        el.style.opacity = 0;
+        el.style.display = display || "block";
+        (function fade() {
+            var val = parseFloat(el.style.opacity);
+            if (!((val += 0.1) > 1)) {
+                el.style.opacity = val;
+                requestAnimationFrame(fade);
+            }
+        })();
+    }
+
     // 스크롤 기능
     // 스크롤바의 상단위치
     let scy = 0;
