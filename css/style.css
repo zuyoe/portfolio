@@ -850,7 +850,7 @@ body {
 .portfolio .inner > h2::after {
     content: "";
     position: absolute;
-    width: 100px;
+    width: 50px;
     height: 6px;
     left: 50%;
     transform: translateX(-50%);
@@ -1357,7 +1357,7 @@ body {
 .snt .inner > h2::after {
     content: "";
     position: absolute;
-    width: 100px;
+    width: 50px;
     height: 6px;
     left: 50%;
     transform: translateX(-50%);
@@ -1526,7 +1526,7 @@ body {
 .contact .inner > h2::after {
     content: "";
     position: absolute;
-    width: 100px;
+    width: 50px;
     height: 6px;
     left: 50%;
     transform: translateX(-50%);
