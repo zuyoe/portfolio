@@ -323,12 +323,16 @@ body {
 .visual-right {
     position: relative;
     display: block;
+    text-align: center;
 }
 .v-img {
     margin-top: 100px;
+    width: 100%;
+    height: auto;
+    text-align: center;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1100px) {
     .visual-left > h1 {
         font-size: 7rem;
     }
@@ -339,6 +343,38 @@ body {
         width: 60%;
 
         margin: 50px 0 0 40px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .visual-left > h1 {
+        font-size: 6rem;
+    }
+    .visual-left p {
+        font-size: 1.4rem;
+    }
+    .vmw {
+        width: 60%;
+        margin: 50px 0 0 40px;
+    }
+}
+@media screen and (max-width: 920px) {
+    .visual-left > h1 {
+        font-size: 6rem;
+        margin: 160px 0 60px 50px;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .visual-left > h1 {
+        font-size: 6rem;
+        margin: 120px 0 60px 50px;
+    }
+    .visual-left p {
+        font-size: 1.4rem;
+    }
+    .vmw {
+        width: 50%;
     }
 }
 
@@ -418,6 +454,27 @@ body {
 .profile .inner {
     position: relative;
 }
+
+.profile .inner > h2 {
+    position: relative;
+    font-size: 3rem;
+    font-weight: 800;
+    text-align: center;
+    margin-bottom: 80px;
+    letter-spacing: 18px;
+}
+
+.profile .inner > h2::after {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 6px;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -50px;
+    background-color: #000;
+}
+
 .p-top {
     display: flex;
     justify-content: flex-end;
@@ -425,7 +482,7 @@ body {
 }
 .p-top > img {
     position: absolute;
-    top: -16px;
+    top: 93px;
     left: 50px;
     width: 400px;
     height: 400px;
@@ -569,7 +626,7 @@ body {
 }
 @media screen and (max-width: 1150px) {
     .p-top > img {
-        top: -18px;
+        top: 93px;
         left: 35px;
         width: 380px;
         height: 380px;
@@ -577,7 +634,7 @@ body {
 }
 @media all and (min-width: 1024px) and (max-width: 1090px) {
     .p-top > img {
-        top: -8px;
+        top: 102px;
         left: 20px;
         width: 370px;
         height: 370px;
@@ -775,27 +832,40 @@ body {
 .portfolio {
     display: block;
     position: relative;
-    padding: 80px 0;
+    padding: 120px 0 80px 0;
+    background-color: #fafafa;
 }
 .portfolio .inner {
     display: block;
     position: relative;
 }
 .portfolio .inner > h2 {
-    font-size: 4rem;
-    font-weight: 600;
+    font-size: 3rem;
+    font-weight: 800;
     text-align: center;
-    margin-bottom: 60px;
-    font-family: "cooper Black";
+    margin-bottom: 25px;
+    letter-spacing: 18px;
 }
+
 .portfolio .inner > h2::after {
-    /* content: ""; */
+    content: "";
     position: absolute;
-    right: 525px;
-    top: 20px;
-    width: 150px;
-    height: 16px;
-    background: #f54a4a26;
+    width: 100px;
+    height: 6px;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -50px;
+    background-color: #000;
+}
+
+.portfolio .inner > span {
+    display: block;
+    font-weight: 300;
+    text-align: center;
+    color: #858585;
+    letter-spacing: 7px;
+    font-size: 1.2rem;
+    margin-bottom: 60px;
 }
 
 /* swiper */
@@ -1272,27 +1342,29 @@ body {
 
 /* skills */
 .snt {
-    padding: 80px 0;
+    padding: 120px 0 80px 0;
 }
 .snt .inner {
     position: relative;
 }
 .snt .inner > h2 {
-    font-size: 4rem;
-    font-weight: 600;
+    font-size: 3rem;
+    font-weight: 800;
     text-align: center;
     margin-bottom: 60px;
-    font-family: "Cooper Black";
+    letter-spacing: 18px;
 }
 .snt .inner > h2::after {
-    /* content: ""; */
+    content: "";
     position: absolute;
-    right: 510px;
-    top: 22px;
-    width: 180px;
-    height: 16px;
-    background: #f54a4a26;
+    width: 100px;
+    height: 6px;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -50px;
+    background-color: #000;
 }
+
 .snt-box {
     display: flex;
     gap: 120px;
@@ -1438,27 +1510,31 @@ body {
 
 /* contact */
 .contact {
-    padding: 80px 0;
+    padding: 120px 0 80px 0;
 }
 .contact .inner {
     position: relative;
 }
 .contact .inner > h2 {
-    font-size: 4rem;
-    font-weight: 600;
+    font-size: 3rem;
+    font-weight: 800;
     text-align: center;
     margin-bottom: 60px;
-    font-family: "Cooper Black";
+    letter-spacing: 18px;
 }
+
 .contact .inner > h2::after {
-    /* content: ""; */
+    content: "";
     position: absolute;
-    right: 530px;
-    top: 22px;
-    width: 140px;
-    height: 16px;
-    background: #f54a4a26;
+    width: 100px;
+    height: 6px;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -50px;
+    background-color: #000;
 }
+
+
 .c-icon {
     display: flex;
     justify-content: center;
