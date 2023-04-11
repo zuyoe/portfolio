@@ -35,7 +35,7 @@ body {
     font-family: "Noto Sans KR", "Cooper Black", sans-serif;
     font-size: 14px;
     line-height: 1;
-    letter-spacing: -0.64px;
+    /* letter-spacing: -0.64px; */
     color: #191919;
     word-break: keep-all;
 }
@@ -58,7 +58,7 @@ body {
 /* 위로가기 */
 .gotop {
     position: fixed;
-    right: 60px;
+    right: 30px;
     bottom: 60px;
     display: flex;
     justify-content: center;
@@ -68,10 +68,10 @@ body {
     height: 60px;
     border-radius: 50%;
     background-color: #fff;
-    box-shadow: rgba(250, 162, 162, 0.2) 0px 2px 8px 0px;
+    box-shadow: rgba(196, 89, 89, 0.2) 0px 2px 8px 0px;
     border: 0;
     cursor: pointer;
-    color: #e26161;
+    color: #8B1414;
     font-size: 28px;
     opacity: 0;
     visibility: hidden;
@@ -703,6 +703,7 @@ body {
         text-align: center;
         padding: 40px 20px;
     }
+
     .p-top {
         display: inline-block;
     }
@@ -746,6 +747,24 @@ body {
         font-size: 1.4rem;
     }
 }
+@media screen and (max-width: 767px) {
+    .profile .inner > h2 {
+        position: relative;
+        font-size: 1.8rem;
+        font-weight: 800;
+        text-align: center;
+        margin-bottom: 80px;
+        letter-spacing: 18px;
+    }
+    .profile .inner > h2::after {
+        width: 50px;
+        height: 6px;
+        left: 50%;
+        transform: translateX(-50%);
+        top: -50px;
+        background-color: #000;
+    }
+}
 @media all and (min-width: 615px) and (max-width: 672px) {
     .bubble {
         padding: 50px;
@@ -777,6 +796,7 @@ body {
         text-align: center;
         padding: 40px 0;
     }
+
     .p-top {
         display: inline-block;
     }
@@ -936,6 +956,18 @@ body {
     height: 440px;
     border-radius: 20px;
     padding: 30px;
+}
+
+.study-project > h2 {
+    font-size: 1.2rem;
+    background-color: #d85252;
+    color: #fff;
+    border-radius: 4px;
+    padding: 12px;
+    margin-bottom: 35px;
+    letter-spacing: 3px;
+    width: 200px;
+    text-align: center;
 }
 
 .study-project > h1 {
@@ -1199,6 +1231,11 @@ body {
         font-weight: 600;
         margin-bottom: 15px;
     }
+    .study-project > h2 {
+        font-size: 1rem;
+        width: 180px;
+    }
+
     .study-project > p {
         font-size: 1.6rem;
         font-weight: 400;
@@ -1249,6 +1286,31 @@ body {
     }
 }
 @media screen and (max-width: 767px) {
+    .portfolio .inner > h2 {
+        position: relative;
+        font-size: 1.8rem;
+        font-weight: 800;
+        text-align: center;
+        margin-bottom: 25px;
+        letter-spacing: 18px;
+    }
+    .profile .inner > h2::after {
+        width: 50px;
+        height: 6px;
+        left: 50%;
+        transform: translateX(-50%);
+        top: -50px;
+        background-color: #000;
+    }
+    .portfolio .inner > span {
+        display: block;
+        font-weight: 300;
+        text-align: center;
+        color: #858585;
+        letter-spacing: 7px;
+        font-size: 0.4rem;
+        margin-bottom: 60px;
+    }
     .swVisual-wrap-1 {
         position: relative;
         display: block;
@@ -1297,10 +1359,23 @@ body {
 
     .study-project {
         display: flex;
+        align-items: center;
         width: 100%;
         height: 100%;
         border-radius: 20px;
         padding: 30px;
+        text-align: center;
+    }
+    .study-project > h2 {
+        align-items: center;
+        font-size: 0.7rem;
+        background-color: #d85252;
+        color: #fff;
+        border-radius: 4px;
+        padding: 9px;
+        margin-bottom: 35px;
+        letter-spacing: 3px;
+        width: 200px;
         text-align: center;
     }
 
@@ -1488,6 +1563,22 @@ body {
     }
 }
 @media screen and (max-width: 767px) {
+    .snt .inner > h2 {
+        position: relative;
+        font-size: 1.8rem;
+        font-weight: 800;
+        text-align: center;
+        margin-bottom: 50px;
+        letter-spacing: 18px;
+    }
+    .profile .inner > h2::after {
+        width: 50px;
+        height: 6px;
+        left: 50%;
+        transform: translateX(-50%);
+        top: -50px;
+        background-color: #000;
+    }
     .snt-box {
         display: flex;
         flex-direction: column;
@@ -1534,7 +1625,6 @@ body {
     background-color: #000;
 }
 
-
 .c-icon {
     display: flex;
     justify-content: center;
@@ -1562,6 +1652,22 @@ body {
 }
 
 @media screen and (max-width: 767px) {
+    .contact .inner > h2 {
+        position: relative;
+        font-size: 1.8rem;
+        font-weight: 800;
+        text-align: center;
+        margin-bottom: 50px;
+        letter-spacing: 18px;
+    }
+    .profile .inner > h2::after {
+        width: 50px;
+        height: 6px;
+        left: 50%;
+        transform: translateX(-50%);
+        top: -50px;
+        background-color: #000;
+    }
     .contact {
         padding: 40px 0;
     }
